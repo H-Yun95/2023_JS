@@ -1,3 +1,12 @@
 body {
     background-color: antiquewhite;
 }
+
+h1 {
+    color: blueviolet;
+    transition: color .5s ease-in-out;
+}
+
+.active {
+    color: tomato;
+}
