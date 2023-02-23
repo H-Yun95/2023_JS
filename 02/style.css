@@ -7,6 +7,10 @@ h1 {
     transition: color .5s ease-in-out;
 }
 
+.blue_font {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .active {
     color: tomato;
 }

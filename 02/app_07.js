@@ -11,3 +11,5 @@ function handleTitleClick(){
 } // CSS에 active 클래스를 선언하고, js에서 클래스 네임을 변경
 
 h1.addEventListener("mouseenter", handleTitleClick);
+
+//그러나 위의 경우, ClassName을 직접 건드리기에 기존 HTML에서 설정해 놀은 classname이 씹히는 현상 발생.
