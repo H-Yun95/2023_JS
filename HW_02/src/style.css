@@ -1,0 +1,15 @@
+h1 {
+  color: white;
+}
+
+.color_blue {
+  background-color: rgb(91, 91, 229);
+}
+
+.color_violet {
+  background-color: rgb(153, 74, 227);
+}
+
+.color_yellow {
+  background-color: orange;
+}
