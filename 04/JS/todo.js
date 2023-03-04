@@ -2,6 +2,13 @@
 const toDoInput = toDoForm.querySelector("input");
  const toDoList = document.querySelector(".todo-list");
 
+const toDos = []; // 로컬에 인풋을 저장하기 위한 리스트 생성
+
+function saveToDos() {
+    localStorage.setItem("todos", JSON.stringify(toDos));
+} //JSON으로 로컬에 리스트같은 문자열로 저장 가능
+
+
 function deletToDo(e) {
     const li = e.target.parentElement; // 버튼의 부모인 원소를 타겟으로,
     li.remove(); // 그것을 지운다.
@@ -25,10 +32,14 @@ event.target으로 이벤트 내의 특정 요소를 겨냥하는 것이 가능.
     e.preventDefault(); // 서브밋이 되는걸 막고
     const newToDo = toDoInput.value; // 인풋에 적힌 값을 새로 변수지정
     toDoInput.value = ""; // 그 뒤 인풋을 초기화해주고
+    toDos.push(newToDo);
     paintToDo(newToDo); // 위의 페인트 함수 실행
+    saveToDos();
  }
 
  toDoForm.addEventListener("submit", toDoSubmit);
 
  // 하면서 느낀건데, 인터프리터 특성상 최소단위의 함수를 위부터 해서
  // 역피라미드의 느낌으로 코드를 짜야한다.
+
+ //JSON.stringify() = 어떤 요소든 문자열로 바꿔줌
