@@ -13,9 +13,9 @@ const changeIMG = document.querySelector(".changeIMG button")
 const BGImage = document.querySelector("body");
 
 function changeBG(e) {
-    e.preventDefault()
+    e.preventDefault();
     BGImage.style.backgroundImage = imageChoise;
-    console.log(imageChoise)
+    console.log(imageChoise);
 }
 
 // Fail
