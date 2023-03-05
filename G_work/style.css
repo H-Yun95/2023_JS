@@ -1,0 +1,65 @@
+.hidden {
+    display: none;
+}
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block{
+    display: block;
+}
+
+.welcomeBox {
+    height: 100vh;
+    width: 1515px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: dotted;
+}
+
+
+#WTitle{
+    background-color: black;
+    color: white;
+}
+
+.title {
+    width: 1000px;
+    height: 100px;
+    border-style: dotted;
+    position: relative;
+    top: 30px;
+}
+
+.toDoList {
+    width: 800px;
+    height: 2000px;
+    border-style: dotted;
+    position: relative;
+    top: 90px;
+    right: 300px;
+}
+
+.clock{
+    border-style: dotted;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    bottom: 350px;
+    left: 450px
+    
+}
+
+.something{
+    border-style: dotted;
+    height: 700px;
+    width: 500px;
+    position: relative;
+    bottom: 150px;
+    left: 450px
+}
