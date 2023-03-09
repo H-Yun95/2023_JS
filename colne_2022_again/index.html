@@ -4,38 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="page_1.css" />
+    <link rel="stylesheet" href="css/page_1.css" />
     <title>page 1</title>
   </head>
   <body>
-    <div id="status-bar">
-      <div class="status-bar_column">
+    <div class="status-bar">
+      <div class="status-bar__column">
         <span>No service</span>
         <i class="fas fa-wifi"></i>
       </div>
-      <div class="status-bar_column">
+      <div class="status-bar__column">
         <span>18:43</span>
       </div>
-      <div class="status-bar_column">
+      <div class="status-bar__column">
         <span>100%</span>
         <i class="fas fa-battery-full"></i>
         <i class="fas fa-bolt"></i>
       </div>
-
-      <header class="welcome-header">
-        <h1 class="welcome-header_title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header_text">
-          If you have a Kokoa Account, log in with your email or phone number.
-        </p>
-      </header>
-
-      <form id="login-form">
-        <input type="emali" placeholder="Email" />
-        <input type="password" placeholder="password" />
-        <input type="submit" value="Log In" />
-        <a href="#">Find Kokoa Account or Password</a>
-      </form>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="emali" placeholder="Email" />
+      <input type="password" placeholder="password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
