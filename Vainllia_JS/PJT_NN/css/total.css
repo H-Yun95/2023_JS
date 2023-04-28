@@ -4,3 +4,6 @@
 body {
     display: flex;
 }
+.hidden {
+    display: none;
+}
